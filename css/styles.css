@@ -55,11 +55,11 @@ body {
 }
 .page-header-container {
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .navigate {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
   align-items: center;
 }
 .logo {
@@ -95,7 +95,6 @@ body {
 .auth-address {
   font-style: normal;
   margin-left: auto;
-  padding: 24px 0;
 }
 .auth-nav {
   color: var(--primary-text-color);
@@ -140,6 +139,7 @@ body {
   display: block;
   height: 56px;
   border: none;
+  min-width: 169px;
 }
 
 .button:hover,
@@ -172,7 +172,7 @@ body {
   background-color: var(--primari-white-color);
   gap: 24px;
 }
-.featurer-text {
+.feature-text {
   width: calc((100% - 72px) / 4);
 }
 .title {
@@ -209,7 +209,7 @@ body {
 }
 .team-pic {
   width: calc((100% - 72px) / 4);
-  /* border-radius: 0px 0px 4px 4px; */
+  /* border-radius: 0px 0px 10px 10px; */
 }
 .team-name-prof {
   background-color: var(--primari-white-color);
@@ -255,6 +255,8 @@ body {
   text-decoration: none;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.footer-link {
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -277,10 +279,10 @@ body {
   border-radius: 4px;
   padding: 12px 24px;
 }
-.button-portfolio.primary {
-  color: var(--primari-white-color);
-  background: var(--accent-color);
-}
+/* .button-portfolio.primary { */
+/* color: var(--primari-white-color); */
+/* background: var(--accent-color); */
+/* } */
 
 .button-portfolio:hover,
 .button-portfolio:focus {
