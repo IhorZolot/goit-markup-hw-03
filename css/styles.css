@@ -5,6 +5,7 @@
   --primari-white-color: #ffffff;
   --background: #f4f4fd;
   --focus-hover-color: #404bbf;
+  --botton-border-color: #e7e9fc;
 }
 h1,
 h2,
@@ -41,7 +42,7 @@ body {
   line-height: 1.5;
 }
 .container {
-  width: 1128px;
+  width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -50,16 +51,16 @@ body {
 /* ======================Header================= */
 .header {
   background-color: var(--primari-white-color);
-
-  padding-top: 26px;
-  padding-bottom: 26px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .page-header-container {
   display: flex;
 }
 .navigate {
   display: flex;
-  padding-right: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-items: center;
 }
 .logo {
   color: var(--accent-color);
@@ -94,9 +95,7 @@ body {
 .auth-address {
   font-style: normal;
   margin-left: auto;
-}
-.mail-link {
-  margin-right: 40px;
+  padding: 24px 0;
 }
 .auth-nav {
   color: var(--primary-text-color);
@@ -104,6 +103,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   display: flex;
+  gap: 40px;
 }
 .link:hover,
 .link:focus {
@@ -114,7 +114,7 @@ body {
 .hero {
   background-color: var(--title-text-color);
   padding-top: 188px;
-  padding-bottom: 292px;
+  padding-bottom: 188px;
   text-align: center;
 }
 .hero-title {
@@ -124,8 +124,8 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
+  max-width: 496px;
 }
-
 .button {
   color: var(--primari-white-color);
   background: var(--accent-color);
@@ -137,6 +137,9 @@ body {
   border-radius: 4px;
   margin: 0;
   padding: 16px 32px;
+  display: block;
+  height: 56px;
+  border: none;
 }
 
 .button:hover,
@@ -144,7 +147,7 @@ body {
   color: var(--primari-white-color);
   background: var(--focus-hover-color);
 }
-/* =========================Section 1=================== */
+/* =========================Section 2=================== */
 
 .section {
   padding-top: 120px;
@@ -167,6 +170,10 @@ body {
 .feature-list {
   display: flex;
   background-color: var(--primari-white-color);
+  gap: 24px;
+}
+.featurer-text {
+  width: calc((100% - 72px) / 4);
 }
 .title {
   color: var(--title-text-color);
@@ -176,11 +183,8 @@ body {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-.feature-text:not(:last-child) {
-  margin-right: 24px;
-}
 
-/* =========================Section 2================= */
+/* =========================Section 3 ================= */
 .section-work {
   color: var(--primary-text-color);
   background-color: var(--primari-white-color);
@@ -188,39 +192,47 @@ body {
 
 .work-list {
   display: flex;
+  gap: 24px;
 }
-.work-img:not(:last-child) {
-  margin-right: 20px;
+.work-img {
+  width: calc((100% - 48px) / 3);
 }
 
-/* ========================= ection 3 =============== */
+/* ========================= Section 4 =============== */
 .section-team {
   background-color: var(--background);
 }
 .team-list {
+  justify-content: space-between;
+  display: flex;
+  gap: 24px;
+}
+.team-pic {
+  width: calc((100% - 72px) / 4);
+  /* border-radius: 0px 0px 4px 4px; */
+}
+.team-name-prof {
+  background-color: var(--primari-white-color);
+  padding: 32px 16px;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+}
+.title-team {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  justify-content: space-between;
-  display: flex;
-}
-.team-card {
-  display: flex;
-}
-.team-fon {
-  background-color: var(--primari-white-color);
+  margin-bottom: 8px;
   text-align: center;
-  padding-bottom: 32px;
 }
 .text-team {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.02em;
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
 }
-
 .text {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -228,13 +240,11 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
-.padding-img {
-  margin-bottom: 32px;
-}
 
 /* ========================= Footer ==================*/
 .footer {
   background-color: var(--title-text-color);
+  padding: 100px 0;
 }
 .logo-footer {
   color: var(--background);
@@ -245,11 +255,8 @@ body {
   text-decoration: none;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: ;
-}
-.footer-size {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .text-footer {
   color: var(--background);
@@ -266,38 +273,51 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border: 1px solid var(--botton-border-color);
   border-radius: 4px;
+  padding: 12px 24px;
 }
 .button-portfolio.primary {
   color: var(--primari-white-color);
   background: var(--accent-color);
 }
-.button-portfolio.secondary {
-  color: var(--accent-color);
-  background-color: var(--background);
-}
+
 .button-portfolio:hover,
 .button-portfolio:focus {
+  border: 1px solid transparent;
   color: var(--primari-white-color);
   background-color: var(--focus-hover-color);
 }
 .button-list {
-  text-align: center;
   display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
-.button-line:not(:last-child) {
-  margin-right: 24px;
-}
+
 /* =========================  Our Work ============== */
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .our-work {
-  /* color: #e7e9fc; */
-  margin-top: 72px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .work-fon {
-  background-color: #e7e9fc;
+  background-color: var(--primari-white-color);
   padding-bottom: 32px;
   margin-bottom: 42px;
+  background-origin: padding-box;
+  width: calc((100% - 48px) / 3);
+}
+.work-link {
+  padding: 32px 16px;
+  border-top: none;
+  border: 1px solid #e7e9fc;
+  margin-bottom: 8px;
+  border: 1px solid var(--botton-border-color);
 }
