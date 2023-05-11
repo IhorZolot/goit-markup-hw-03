@@ -52,10 +52,11 @@ body {
 .header {
   background-color: var(--primari-white-color);
   border-bottom: 1px solid #e7e9fc;
+  padding: 24px 0;
 }
 .page-header-container {
   display: flex;
-  padding: 24px 0;
+  /* padding: 24px 0; */
 }
 .navigate {
   display: flex;
@@ -317,8 +318,8 @@ body {
 }
 .work-link {
   padding: 32px 16px;
-  border-top: none;
   border: 1px solid #e7e9fc;
   margin-bottom: 8px;
   border: 1px solid var(--botton-border-color);
+  border-top: none;
 }
