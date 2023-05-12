@@ -72,6 +72,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
+  display: inline-block;
 }
 .logo-color {
   color: var(--title-text-color);
@@ -85,6 +86,7 @@ body {
 }
 .padding-link {
   padding: 24px 0;
+  display: inline-block;
 }
 
 /* ======================Site Navigation==============  */
@@ -192,6 +194,7 @@ body {
 .section-work {
   color: var(--primary-text-color);
   background-color: var(--primari-white-color);
+  padding-bottom: 120px;
 }
 
 .work-list {
@@ -315,7 +318,7 @@ body {
 .work-fon {
   background-color: var(--primari-white-color);
   padding-bottom: 32px;
-  margin-bottom: 42px;
+  /* margin-bottom: 42px; */
   background-origin: padding-box;
   width: calc((100% - 48px) / 3);
 }
