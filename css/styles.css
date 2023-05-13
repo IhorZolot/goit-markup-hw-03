@@ -102,10 +102,6 @@ body {
   margin-left: auto;
 }
 .auth-nav {
-  color: var(--primary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
   display: flex;
   gap: 40px;
 }
@@ -188,6 +184,18 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* =========================Section 3 ================= */
@@ -285,11 +293,6 @@ body {
   border-radius: 4px;
   padding: 12px 24px;
 }
-/* .button-portfolio.primary { */
-/* color: var(--primari-white-color); */
-/* background: var(--accent-color); */
-/* } */
-
 .button-portfolio:hover,
 .button-portfolio:focus {
   border: 1px solid transparent;
@@ -317,7 +320,7 @@ body {
 }
 .work-fon {
   background-color: var(--primari-white-color);
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
   /* margin-bottom: 42px; */
   background-origin: padding-box;
   width: calc((100% - 48px) / 3);
